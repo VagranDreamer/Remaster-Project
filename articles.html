@@ -15,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="shortcut icon" href="img/rp.webp">
 </head>
 
 <body>
@@ -29,7 +33,7 @@
         <div class='menu-button'></div>
       </label>
         <ul class="menu">
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -39,32 +43,83 @@
 
 <div class=container2>
     <div class=box2>
-        <h2>Correct installation of the Toolset and correction of some errors.</h2>
+        <h2>DAO Modding: Correct installation of the Toolset and fix of some errors.</h2>
         <div class="line-img"><img src="img/line2.jpg" alt="Line"></div>
         <br>
 
-        <ul><h4>The assembly consists of the following parts:</h4>
+        <ul>
           <li>1.The game must be installed before installing the Toolset.</li>
           <li>2.The toolset requires Microsoft SQL Server 2005 which comes with it. Uninstall other versions if they are available on your PC, install the correct version and this will save you from half of the problems you may encounter.</li>
           <li>3.Sometimes something is treated with a simple reinstallation, you should remember this. Next, we will analyze a common mistake.</li>
           <li>4. "origins game install not found" 
-            Press on the keyboard Win + R --> enter in the line regedit.exe press "Enter". The registry editor will open. We need to create a path to the game at this address:
+            Press on the keyboard Win + R -> enter in the line regedit.exe press "Enter". The registry editor will open. We need to create a path to the game at this address:
             _LOCAL_MACHINE\SOFTWARE\Wow6432Node\BioWare\Dragon Age</li>
-          <li>To do this, go to THE_LOCAL_MACHINE\SOFTWARE\ and right-click on "Wow6432Node", click "new" --> "key" call  it "BioWare" then create "Dragon Age" in the same way how you created "BioWare" </li>
-          <li>Next, click on "Dragon Age" and in the window on the right, right-click in an empty place "new" --> "string value" call it "Path"
+          <li>To do this, go to THE_LOCAL_MACHINE\SOFTWARE\ and right-click on "Wow6432Node", click "new" -> "key" call  it "BioWare" then create "Dragon Age" in the same way how you created "BioWare" </li>
+          <li>Next, click on "Dragon Age" and in the window on the right, right-click in an empty place "new" -> "string value" call it "Path"
             Right-click on "Path" and click "Modify". And here you insert the path where you have the game installed, for example - C:\Games\Dragon Age Origins</li>
           <li>Sometimes it happens that "Path" already exists and is has name "Patch_" rename it with the removal of the underscore _ after which the Toolset is successfully installed!</li>
           <li>5.You can also familiarize yourself with these materials.</li> 
-          <li><a href="http://datoolset.net/wiki/Installation_troubleshooting" target="_blank">Wiki</a>  <a href="https://www.nexusmods.com/dragonage/mods/1284?tab=files" target="_blank">Toolset Picture Fix Guide</a>  <a href="https://www.nexusmods.com/dragonage/mods/5904" target="_blank">SQL Server 2022 for Dragon Age Toolset</a></li>
+          <li><a href="http://datoolset.net/wiki/Installation_troubleshooting" target="_blank">Wiki</a>,  <a href="https://www.nexusmods.com/dragonage/mods/1284?tab=files" target="_blank">Toolset Picture Fix Guide</a>, <a href="https://www.nexusmods.com/dragonage/mods/5904" target="_blank">SQL Server 2022 for Dragon Age Toolset</a></li>
           </ul>
 
     </div>
     <div class=box2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bl0p511s5Tw?si=mt5LS52B1TZkM5Qe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="img/1toolset.png" alt="Instagram Icon">
+      <img src="img/2toolset.png" alt="Instagram Icon">
     </div>
   </div>
 
-<div class=container2>
+  <div class=container2>
+    <div class=box2>
+        <h2>TW3 Modding: How open and edit mods from nexus with WolvenKit</h2>
+        <div class="line-img"><img src="img/line2.jpg" alt="Line"></div>
+        <br>
+
+        <ul>
+          <li>1.Download the latest WolvenKit version from GitHub - <a href="https://github.com/WolvenKit/WolvenKit-7" target="_blank">Link</a></li>
+          <li>2.Once you open the application, start a new project and name it. Make sure there are no spaces in the name. Also, make sure you’ve set the correct paths for your game directory and wcc_lite path.</li>
+          <li>3.You’ll see a folder icon up top with a blue magnifying glass, and next to it one with a red magnifying glass. The blue opens up uncooked game files to make your own mod from scratch, the red opens up mod files. So click on the red. The main two folders you’ll ever need to access for your mods are usually Bundles and Texture, not sound or collision unless you have a of that edits those files.</li>
+          <li>4.So first, click on bundle, scroll down and find the mod you’re looking for. Right click and mark all files. Once that’s happened, you’ll see them pop up on the right of the small window. Then click on the move all files to mod if it’s a mod, or move all files to dlc if it’s a dlc.</li>
+          <li>5.Once that’s done, then go back to the Root folder by clicking on it, and choose Texture if your mod has a texture.cache. If not, then ignore this step. Once you select texture, right click on your mod again and mark all, and do the same by moving it all to mod or dlc depending. Now you’re done here. So close that little window, and on the right side of WK you might have seen all the texture files pop up under the import window. This is important. Before you pack and install your mod once you’ve edited whatever you want to edit, click on the import button up there. It’s very important or your mod will fail to produce a texture.cache. Every time you edit a texture .tga file, always click on that import button.</li>
+          <li>6.Then once you’re done editing your mod, click on the pack and install button up top and it will be installed in your mods folder. Keep the check boxes what they’re automatically set to and you’re fine.</li>
+          </ul>
+
+    </div>
+    <div class=box2>
+      <img src="img/tw3_modding_01.jpg" alt="Instagram Icon">
+      <!-- <img src="img/2toolset.png" alt="Instagram Icon"> -->
+    </div>
+  </div>
+
+
+  
+  <!-- <div class=container2>
+    <div class=box2>
+
+
+      
+<section id="b1" class="block1"></section>
+<section id="b2" class="block2"></section>
+<section id="b3" class="block3">
+  <div class="btn">Show content</div>
+  <div class="hidden"></div>
+</section>
+<section id="b4" class="block4"></section>
+<div class="articles_sidebar">
+<ul>
+  <li><a href="#b1" id="m1">Toolset Installation</a></li>
+  <li><a href="#b2" id="m2">WolvenKit Mod Edit</a></li>
+  <li><a href="#b3" id="m3">block 3</a></li>
+  <li><a href="#b4" id="m4">block 4</a></li>
+</ul>
+</div>
+
+<!-- </div>
+</div> -->
+
+
+
+<!-- <div class=container2>
     <div class=box2>
         <h2>🟥BLOCK STRUCTURE</h2>
         <br>
@@ -98,7 +153,7 @@
         <button class="btn">Readme</button>
     </form>
     </div>
-</div>
+</div> -->
 
 <div class="container">
     <div class="box">
