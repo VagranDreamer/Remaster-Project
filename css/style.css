@@ -42,7 +42,6 @@ html, body {
   top: 0px;
   z-index: 1; */
   /* Прилипание сверху конец */
-  z-index: 10;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,6 +61,7 @@ float: right;
 }
 
 .menu {
+  z-index: 10;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -1712,7 +1712,7 @@ iframe {
   width: 100%;  
 }
 #kobavenusab {
-  background-image: url(https://i.pinimg.com/originals/20/79/66/207966671feb1ca5e54b8ae6644105b9.jpg);
+  background-image: url(https://i.imgur.com/PwTHhV6.png);
   background-size: cover;
   bottom: 0;
   border-right: 5px solid rgba(243, 240, 240, 0.7);
