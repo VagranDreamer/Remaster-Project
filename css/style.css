@@ -42,6 +42,7 @@ html, body {
   top: 0px;
   z-index: 1; */
   /* Прилипание сверху конец */
+  z-index: 10;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1693,49 +1694,16 @@ iframe {
 
 } */
 
-.image-comp {
-  margin: 0 auto;
-	position:relative;
-	display: inline-block;
-	line-height: 0;
-}
-.image-comp img {
-	user-select: none;
-	max-width: 400px;
-}
-.image-comp > div {
-	position: absolute;
-	top: 0; bottom: 0; left: 0;
-	width: 25px;
-	max-width: 100%;
-	overflow: hidden;
-	resize: horizontal;
-}
-.image-comp > div:before {
-	content: '';
-	display: block;
-	width: 13px; 
-	height: 13px;
-	overflow: hidden;
-	position: absolute;
-	resize: horizontal;
-	right: 3px; bottom: 3px;
-	background-clip: content-box;
-	background: linear-gradient(-45deg, black 50%, transparent 0);
-	-webkit-filter: drop-shadow(0 0 2px black);
-	filter: drop-shadow(0 0 2px black);
-}
-
 .slayden-savnena {  
   height: 74vw;
   margin: 1vw auto;
-  max-height: 748px;
-  max-width: 1000px;
+  max-height: 720px;
+  max-width: 1280px;
   overflow: hidden;
   width: 100vw;
 }
 .slayden-savnena figure {  
-  background-image: url(https://zornet.ru/ABVUN/Aba/detunis/1st.jpg);
+  background-image: url(https://sun9-77.userapi.com/impg/_ng9qRXNZBRk5ZV1fNdT-N2VurRrGrGOJbeyAQ/U6UJ2Tqo7dI.jpg?size=1920x1080&quality=95&sign=36e35322cfe75786d6ed706a2b6daf38&type=album);
   background-size: cover;
   font-size: 0;
   height: 100%;
@@ -1744,7 +1712,7 @@ iframe {
   width: 100%;  
 }
 #kobavenusab {
-  background-image: url(https://zornet.ru/ABVUN/Aba/detunis/2nd.jpg);
+  background-image: url(https://i.pinimg.com/originals/20/79/66/207966671feb1ca5e54b8ae6644105b9.jpg);
   background-size: cover;
   bottom: 0;
   border-right: 5px solid rgba(243, 240, 240, 0.7);
